@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myStyles.css">
+    <title>My Pixel Designer</title>
+</head>
+
+<body>
+
+    <div class="main-section">
+        <div class="settings">
+            <div class="control-panel">
+                <div class="control">
+                    <label for="grid-width-control">Set Width</label>
+                    <input type="range" id="grid-width-control" min="1" max="35">
+                    <span id="width-display">00</span>
+                </div>
+                <div class="control">
+                    <label for="grid-height-control">Set Height</label>
+                    <input type="range" id="grid-height-control" min="1" max="35">
+                    <span id="height-display">00</span>
+                </div>
+            </div>
+
+            <div class="control-panel">
+                <button id="apply-grid">Generate Design</button>
+                <button id="refresh-grid">Refresh</button>
+                <input type="color" id="color-picker">
+                <button id="delete-btn">Delete</button>
+                <button id="draw-btn">Draw</button>
+            </div>
+
+        </div>
+        <div class="design-box"></div>
+        <h4>Thanks to ASMR Prog for the inspiration!</h4>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+
+</html>
